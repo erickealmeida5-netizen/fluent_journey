@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AccessPage from './features/access/AccessPage'
 import DashboardPage from './features/dashboard/DashboardPage'
@@ -6,7 +7,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fluent_journey">
       <Routes>
         <Route path="/" element={<AccessPage />} />
         <Route path="/welcome" element={<WelcomePage />} />
